@@ -1,0 +1,29 @@
+Function arithmetic_series.getNthTerm(n) = first_term + (n-1)*series_modifier
+Function geometric_series.getNthTerm(n) = first_term * series_modifier ^ (n-1)
+
+Start
+
+If random()%2 = 0
+    Set series = arithmetic_series
+    Set first_term = random()
+    Set series_modifier = random()
+Else
+    Set series = geometric_series
+    Set first_term = random()
+    Set series_modifier = random()
+
+Set a1...a4 = series.getNthTerm(1...4)
+
+Display "Pierwsze wyrazy ciagu: " + a1 + a2 + a3 + "Nastepny wyraz: "
+Read input
+
+If validateInput(input) = false
+    Display "Niepoprawne dane wejsciowe"
+    End
+
+If input = a4
+    Display "Poprawna odpowiedz"
+Else
+    Display "Odpowiedz jest niepoprawna"
+
+End
