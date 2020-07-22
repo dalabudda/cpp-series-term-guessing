@@ -1,7 +1,7 @@
 # Project
 
 #### Name: TP projekt 
-#### Author: Dawid Labudda 175716
+#### Author: Dawid Labudda
 
 
 ## How it work
